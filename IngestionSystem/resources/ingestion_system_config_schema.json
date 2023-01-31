@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "operative_mode": {
+      "type": "string",
+      "enum": ["development", "execution"]
+    },
+    "preparation_system_ip": {
+      "type": "string"
+    },
+    "preparation_system_port": {
+      "type": "integer"
+    },
+    "monitoring_system_ip": {
+      "type": "string"
+    },
+    "monitoring_system_port": {
+      "type": "integer"
+    },
+      "execution_window": {
+      "type": "integer"
+    },
+      "monitoring_window": {
+      "type": "integer"
+    },
+    "missing_samples_threshold": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "operative_mode",
+    "preparation_system_ip",
+    "preparation_system_port",
+    "monitoring_system_ip",
+    "monitoring_system_port",
+    "execution_window",
+    "monitoring_window",
+    "missing_samples_threshold"]
+}

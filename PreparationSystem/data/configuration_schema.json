@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "operative_mode": {
+      "type": "string",
+      "enum": ["development", "execution"]
+    },
+    "segregation_endpoint_IP": {
+      "type": "string"
+    },
+    "segregation_endpoint_port": {
+      "type": "integer"
+    },
+    "execution_endpoint_IP": {
+      "type": "string"
+    },
+    "execution_endpoint_port": {
+      "type": "integer"
+    },
+    "max_eeg": {
+      "type": "integer"
+    },
+    "min_eeg": {
+      "type": "integer"
+    },
+    "features": {
+      "type": "object",
+      "properties": {
+        "delta_wave": {
+          "type": "object",
+          "properties": {
+            "start_frequency": {
+              "type": "number"
+            },
+            "end_frequency": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "start_frequency",
+            "end_frequency"
+          ]
+        },
+        "theta_wave": {
+          "type": "object",
+          "properties": {
+            "start_frequency": {
+              "type": "integer"
+            },
+            "end_frequency": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "start_frequency",
+            "end_frequency"
+          ]
+        },
+        "alpha_wave": {
+          "type": "object",
+          "properties": {
+            "start_frequency": {
+              "type": "integer"
+            },
+            "end_frequency": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "start_frequency",
+            "end_frequency"
+          ]
+        },
+        "beta_wave": {
+          "type": "object",
+          "properties": {
+            "start_frequency": {
+              "type": "integer"
+            },
+            "end_frequency": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "start_frequency",
+            "end_frequency"
+          ]
+        },
+        "environment": {
+          "type": "object",
+          "properties": {
+            "indoor": {
+              "type": "integer"
+            },
+            "outdoor": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "indoor",
+            "outdoor"
+          ]
+        }
+      },
+      "required": [
+        "delta_wave",
+        "theta_wave",
+        "alpha_wave",
+        "beta_wave",
+        "environment"
+      ]
+    }
+  },
+  "required": [
+    "operative_mode",
+    "segregation_endpoint_IP",
+    "segregation_endpoint_port",
+    "execution_endpoint_IP",
+    "execution_endpoint_port",
+    "max_eeg",
+    "min_eeg",
+    "features"
+  ]
+}

@@ -1,0 +1,35 @@
+
+{
+  "type": "object",
+  "properties": {
+    "operative_mode": {
+      "type": "string",
+      "enum": ["collecting_op_mode", "balancing_op_mode", "balancing_evaluation_mode", "quality_op_mode", "quality_evaluation_mode", "splitting_op_mode"]
+    },
+    "user_id": {"type": "number"},
+    "testing_mode": {
+      "type": "string",
+      "enum": ["off", "normal", "incremental"]
+    },
+    "endpoint_ip": {"type": "string"},
+    "endpoint_port": {"type": "string"},
+    "db_name": {"type": "string"},
+    "collecting_threshold": {"type": "number"},
+    "training_set_size":  {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "validation_set_size": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "testing_set_size": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "required": ["operative_mode", "user_id", "testing_mode", "endpoint_ip", "endpoint_port", "db_name", "collecting_threshold", "training_set_size", "validation_set_size", "testing_set_size"]
+}

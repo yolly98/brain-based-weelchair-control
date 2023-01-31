@@ -1,0 +1,10 @@
+flask
+requests
+pylint
+jsonschema
+pytest
+matplotlib
+plotly
+scikit-learn
+kaleido
+pillow

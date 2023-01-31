@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "number_of_generations": {
+      "type": "integer"
+    },
+    "hidden_layer_sizes": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "test_error_threshold": {
+      "type": "number"
+    },
+    "training_error": {
+      "type": "number"
+    },
+    "test_error": {
+      "type": "number"
+    },
+    "valid_classifier": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "number_of_generations",
+    "hidden_layer_sizes",
+    "test_error_threshold",
+    "training_error",
+    "test_error",
+    "valid_classifier"
+  ]
+}

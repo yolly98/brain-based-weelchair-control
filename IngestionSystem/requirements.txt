@@ -1,0 +1,5 @@
+Flask
+pylint
+requests
+jsonschema~=4.16.0
+pandas~=1.5.2

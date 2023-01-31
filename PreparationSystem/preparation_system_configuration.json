@@ -1,0 +1,16 @@
+{
+  "operative_mode": "development",
+  "segregation_endpoint_IP": "172.16.0.12",
+  "segregation_endpoint_port": 5000,
+  "execution_endpoint_IP": "172.16.0.13",
+  "execution_endpoint_port": 5000,
+  "max_eeg": 15,
+  "min_eeg": -15,
+  "features": {
+    "delta_wave": {"start_frequency": 0.5, "end_frequency": 4},
+    "theta_wave": {"start_frequency": 4, "end_frequency": 8},
+    "alpha_wave": {"start_frequency": 8, "end_frequency": 12},
+    "beta_wave": {"start_frequency": 12, "end_frequency": 30},
+    "environment": {"indoor": 0, "outdoor": 1}
+  }
+}

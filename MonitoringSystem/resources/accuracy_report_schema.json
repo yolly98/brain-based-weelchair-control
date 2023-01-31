@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "evaluated_labels": {
+      "type": "integer"
+    },
+    "max_errors_tolerated": {
+      "type": "integer"
+    },
+    "errors": {
+      "type": "integer"
+    },
+    "classifier_accuracy": {
+      "type": "number"
+    },
+    "classifier_accepted": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "evaluated_labels",
+    "max_errors_tolerated",
+    "errors",
+    "accuracy"
+  ]
+}

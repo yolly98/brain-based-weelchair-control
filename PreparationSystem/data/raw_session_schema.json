@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "uuid": {
+      "type": "string"
+    },
+    "calendar": {
+      "type": "string",
+      "enum": ["sport", "shopping", "home", "working"]
+    },
+    "command_thought": {
+      "type": "string",
+      "enum": ["move", "stop", "left", "right", "None"]
+    },
+    "environment": {
+      "type": "string",
+      "enum": ["indoor", "outdoor"]
+    },
+    "headset": {
+      "type": "array",
+      "minItems": 22,
+      "maxItems": 22,
+      "items": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 1375,
+        "items": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "required": ["uuid", "calendar", "environment", "headset", "command_thought"]
+}

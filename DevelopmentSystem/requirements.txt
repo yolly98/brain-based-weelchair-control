@@ -1,0 +1,11 @@
+pylint
+pandas~=1.5.2
+scikit-learn~=1.2.0
+numpy
+pytest
+flask
+requests
+jsonschema
+pytest
+matplotlib
+joblib~=1.2.0

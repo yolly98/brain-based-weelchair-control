@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "uuid": {"type": "string"},
+    "features": {
+      "type": "object",
+      "properties": {
+        "alpha": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 22,
+          "minItems": 22
+        },
+        "beta": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 22,
+          "minItems": 22
+        },
+        "delta": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 22,
+          "minItems": 22
+        },
+        "theta": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 22,
+          "minItems": 22
+        },
+        "environment": {
+          "type": "string",
+          "enum": [
+            "indoor",
+            "outdoor"
+          ]
+        }
+      },
+      "required": ["alpha", "beta", "delta", "theta", "environment"]
+    },
+    "calendar": {
+          "type": "string",
+          "enum": [
+            "sport",
+            "shopping",
+            "home",
+            "working"
+          ]
+        },
+    "command_thought": {
+          "type": "string",
+          "enum": ["move", "stop", "right", "left"]
+        }
+  },
+  "required": ["uuid", "features", "calendar", "command_thought"]
+}

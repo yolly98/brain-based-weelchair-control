@@ -1,0 +1,239 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "training": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          },
+          "features": {
+            "type": "object",
+            "properties": {
+              "alpha": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "beta": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "delta": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "theta": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "environment": {
+                "type": "string",
+                "enum": [
+                  "indoor",
+                  "outdoor"
+                ]
+              }
+            },
+            "required": [
+              "alpha",
+              "beta",
+              "delta",
+              "theta",
+              "environment"
+            ]
+          },
+          "command_thought": {
+            "type": "string",
+            "enum": [
+              "move",
+              "stop",
+              "left",
+              "right"
+            ]
+          }
+        },
+        "required": [
+          "uuid",
+          "features",
+          "command_thought"
+        ]
+      }
+    },
+    "validation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          },
+          "features": {
+            "type": "object",
+            "properties": {
+              "alpha": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "beta": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "delta": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "theta": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "environment": {
+                "type": "string",
+                "enum": [
+                  "indoor",
+                  "outdoor"
+                ]
+              }
+            },
+            "required": [
+              "alpha",
+              "beta",
+              "delta",
+              "theta",
+              "environment"
+            ]
+          },
+          "command_thought": {
+            "type": "string",
+            "enum": [
+              "move",
+              "stop",
+              "left",
+              "right"
+            ]
+          }
+        },
+        "required": [
+          "uuid",
+          "features",
+          "command_thought"
+        ]
+      }
+    },
+    "testing": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          },
+          "features": {
+            "type": "object",
+            "properties": {
+              "alpha": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "beta": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "delta": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "theta": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 22,
+                "minItems": 22
+              },
+              "environment": {
+                "type": "string",
+                "enum": [
+                  "indoor",
+                  "outdoor"
+                ]
+              }
+            },
+            "required": [
+              "alpha",
+              "beta",
+              "delta",
+              "theta",
+              "environment"
+            ]
+          },
+          "command_thought": {
+            "type": "string",
+            "enum": [
+              "move",
+              "stop",
+              "left",
+              "right"
+            ]
+          }
+        },
+        "required": [
+          "uuid",
+          "features",
+          "command_thought"
+        ]
+      }
+    }
+  },
+  "required": [
+    "training",
+    "validation",
+    "testing"
+  ]
+}

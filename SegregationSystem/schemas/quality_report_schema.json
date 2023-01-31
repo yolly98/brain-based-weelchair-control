@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "evaluation": {
+      "type": "string",
+      "enum": ["good quality", "bad quality", ""]
+    }
+  },
+  "required": ["evaluation"]
+}

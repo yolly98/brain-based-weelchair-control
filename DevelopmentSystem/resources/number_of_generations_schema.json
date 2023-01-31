@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "number_of_generations": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "number_of_generations"
+  ]
+}

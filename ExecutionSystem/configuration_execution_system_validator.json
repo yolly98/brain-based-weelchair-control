@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "operating_mode": {
+      "type": "string"
+    },
+    "execution_window_value": {
+      "type": "integer"
+    },
+    "monitoring_window_value": {
+      "type": "integer"
+    },
+    "endpoint_IP": {
+      "type": "string"
+    },
+    "endpoint_port": {
+      "type": "integer"
+    },
+    "testing": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "operating_mode",
+    "execution_window_value",
+    "monitoring_window_value",
+    "endpoint_IP",
+    "endpoint_port",
+    "testing"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "ip_endpoint": "172.16.0.13",
+    "port_endpoint": 5000,
+    "operational_mode": "waiting_for_dataset",
+    "initial_number_of_generations": 100,
+    "number_of_hidden_layers_range": [
+        1,
+        8
+    ],
+    "number_of_hidden_neurons_range": [
+        1,
+        64
+    ],
+    "validation_error_threshold": 0.3,
+    "test_error_threshold": 0.3,
+    "testing_mode": false
+}

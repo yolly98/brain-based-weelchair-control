@@ -1,0 +1,5 @@
+{
+  "labels_threshold" : 20,
+  "max_errors_tolerated" : 4,
+  "testing_mode" : true
+}

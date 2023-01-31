@@ -1,0 +1,12 @@
+{
+    "operative_mode": "quality_evaluation_mode",
+    "user_id": 40,
+    "testing_mode": "off",
+    "endpoint_ip": "172.16.0.10",
+    "endpoint_port": "5000",
+    "db_name": "segregation.db",
+    "collecting_threshold": 100,
+    "training_set_size": 0.7,
+    "validation_set_size": 0.2,
+    "testing_set_size": 0.1
+}

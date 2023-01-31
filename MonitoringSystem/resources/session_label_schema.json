@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "uuid": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string",
+      "enum" : ["stop" ,"move" ,"right" , "left"]
+    }
+  },
+  "required": [
+    "uuid",
+    "label"
+  ]
+}

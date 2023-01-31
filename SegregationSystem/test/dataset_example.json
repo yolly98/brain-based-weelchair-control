@@ -1,0 +1,27 @@
+{
+  'training': [
+    {
+      'uuid': '676',
+      'features': {
+        'alpha': [3.55, 1.44, 1.65, 2.55],
+        'beta': [4.61, 5.37, 5.63, 7.67],
+        'delta': [6.05, 5.04, 3.24, 4.56],
+        'theta': [4.1, 2.11, 3.09, 1.14],
+        'environment': 'indoor'
+      },
+      'calendar': 'working',
+      'command_thought': 'move'
+    },
+    {
+      'uuid': '210',
+      ...
+    },
+    ...
+  ],
+  'validation': [
+    ...
+  ],
+  'testing': [
+    ...
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ip_endpoint": {
+      "type": "string"
+    },
+    "port_endpoint": {
+      "type": "integer"
+    },
+    "operational_mode": {
+      "type": "string"
+    },
+    "initial_number_of_generations": {
+      "type": "integer"
+    },
+    "number_of_hidden_layers_range": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "number_of_hidden_neurons_range": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "validation_error_threshold": {
+      "type": "number"
+    },
+    "test_error_threshold": {
+      "type": "number"
+    },
+    "testing_mode": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ip_endpoint",
+    "port_endpoint",
+    "operational_mode",
+    "initial_number_of_generations",
+    "number_of_hidden_layers_range",
+    "number_of_hidden_neurons_range",
+    "testing_mode"
+  ]
+}

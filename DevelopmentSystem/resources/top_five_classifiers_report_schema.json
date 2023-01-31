@@ -1,0 +1,194 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "number_of_generations": {
+      "type": "integer"
+    },
+    "validation_error_threshold": {
+      "type": "number"
+    },
+    "classifiers": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "uuid": {
+              "type": "integer"
+            },
+            "hidden_layer_sizes": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "training_error": {
+              "type": "number"
+            },
+            "validation_error": {
+              "type": "number"
+            },
+            "actual_best": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "uuid",
+            "hidden_layer_sizes",
+            "training_error",
+            "validation_error",
+            "actual_best"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "uuid": {
+              "type": "integer"
+            },
+            "hidden_layer_sizes": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "training_error": {
+              "type": "number"
+            },
+            "validation_error": {
+              "type": "number"
+            },
+            "actual_best": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "uuid",
+            "hidden_layer_sizes",
+            "training_error",
+            "validation_error",
+            "actual_best"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "uuid": {
+              "type": "integer"
+            },
+            "hidden_layer_sizes": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "training_error": {
+              "type": "number"
+            },
+            "validation_error": {
+              "type": "number"
+            },
+            "actual_best": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "uuid",
+            "hidden_layer_sizes",
+            "training_error",
+            "validation_error",
+            "actual_best"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "uuid": {
+              "type": "integer"
+            },
+            "hidden_layer_sizes": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "training_error": {
+              "type": "number"
+            },
+            "validation_error": {
+              "type": "number"
+            },
+            "actual_best": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "uuid",
+            "hidden_layer_sizes",
+            "training_error",
+            "validation_error",
+            "actual_best"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "uuid": {
+              "type": "integer"
+            },
+            "hidden_layer_sizes": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "training_error": {
+              "type": "number"
+            },
+            "validation_error": {
+              "type": "number"
+            },
+            "actual_best": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "uuid",
+            "hidden_layer_sizes",
+            "training_error",
+            "validation_error",
+            "actual_best"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "number_of_generations",
+    "validation_error_threshold",
+    "classifiers"
+  ]
+}

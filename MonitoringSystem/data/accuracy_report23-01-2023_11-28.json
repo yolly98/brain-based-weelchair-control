@@ -1,0 +1,7 @@
+{
+    "evaluated_labels": 50,
+    "max_errors_tolerated": 10,
+    "errors": 37,
+    "accuracy": 0.26,
+    "classifier_accepted": "Yes"
+}
